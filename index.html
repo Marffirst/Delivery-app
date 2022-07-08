@@ -1,273 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    />
+    
+    <!-- <link rel="stylesheet" href="styles.css" /> -->
 
+    <!-- <link rel="stylesheet" type="text/css" href="css/main.css"> -->
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <script src="index.js" async></script>
     <title>Delivery App</title>
-  </head>
-  <body>
+</head>
+
+<body>
     <header class="fixed-top bg-white border-bottom">
-      <div class="container d-flex flex-wrap justify-content-center py-1 mb-4">
-        <a
-          href="#"
-          class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none"
-        >
-          
-          <span class="fs-4 text-blue">Delivery App</span>
-        </a>
-        
-        <ul class="nav nav-pills justify-content-around">
-          <li class="nav-item">
-            <a
-              href="#"
-              class="d-flex align-items-center mb-3 mb-md-0 me-md-auto  text-decoration-none"
-            >
-              <img src="img/png/home.png" height="23" alt="home" />
-              <span class="fs-4 text-blue"> Shop</span>
+        <div class="container d-flex flex-wrap justify-content-center py-1 mb-2">
+            <a href="#" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+                <img src="img/png/home.png" height="23" alt="home" />
+                <span class="fs-4 text-blue">Shop</span>
             </a>
-          </li>
-          <li class="nav-item">
-            <span class="fs-4 text-blue"> | </span>
-          </li >
-          
-          <li class="nav-item">
-            <a
-              href="#"
-              class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-decoration-none"
-            >
-              
-              <span class="fs-4 text-blue">Shopping Cart </span>
-              <img src="img/png/shopping-cart-100.png" height="23" alt="home" />
-            </a>
-          </li>
-          <li class="nav-item">
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                Launch demo modal
-              </button>
-          </li>
-        </ul>
-      </div>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                <span>Shopping Cart</span>
+                <img src="img/png/shopping-cart-100.png" height="23" alt="cart" />
+            </button>
+        </div>
     </header>
     <main class="mt-5">
-        <div class="row row-cols-1 row-cols-md-3 g-4 mt-5">
-            <div class="col">
-              <div class="card h-100">
-                <div class="flex-shrink-0">
-                    <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/13.webp"
-                      class="img-fluid" style="width: 150px;" alt="Generic placeholder image">
-                  </div>
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card h-100">
-                <div class="flex-shrink-0">
-                    <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/6.webp"
-                      class="img-fluid" style="width: 150px;" alt="Generic placeholder image">
-                  </div>
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a short card.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card h-100">
-                <div class="flex-shrink-0">
-                    <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/1.webp"
-                      class="img-fluid" style="width: 150px;" alt="Generic placeholder image">
-                  </div>
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card h-100">
-                <div class="flex-shrink-0">
-                    <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/1.webp"
-                      class="img-fluid" style="width: 150px;" alt="Generic placeholder image">
-                  </div>
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-fullscreen">
-            
-            <div class="container h-100 py-5">
-              <div class="row d-flex justify-content-center align-items-center h-100">
-                <div class="col">
-                  <div class="card shopping-cart" style="border-radius: 15px;">
-                    <div class="card-body text-black">
-          
-                      <div class="row">
-                          
-                        <div class="col-lg-6 px-5 py-4">
-                            
-                          <h3 class="mb-5 pt-2 text-center fw-bold text-uppercase">Your products</h3>
-                          
-                          <div class="d-flex align-items-center mb-5">
-                            <div class="flex-shrink-0">
-                              <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/13.webp"
-                                class="img-fluid" style="width: 150px;" alt="Generic placeholder image">
+        <section class="container-fluid">
+            <div class="row row-cols-1 row-cols-md-5 g-4">
+                <div class="col shop-item">
+                    <div class="card h-100 text-center">
+                        <img class="shop-item-image card-img-top" style="height: 200px;" src="img/harry-potter.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title shop-item-title">Harry Potter</h5>
+                            <div class="shop-item-details d-flex justify-content-around align-items-center">
+                                <span class="shop-item-price">$12.99</span>
+                                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
                             </div>
-                            <div class="flex-grow-1 ms-3">
-                              <a href="#!" class="float-end text-black"><i class="fas fa-times"></i></a>
-                              <h5 class="text-primary">Samsung Galaxy M11 64GB</h5>
-                              <h6 style="color: #9e9e9e;">Color: white</h6>
-                              <div class="d-flex align-items-center">
-                                <p class="fw-bold mb-0 me-5 pe-3">799$</p>
-                                <div class="def-number-input number-input safari_only">
-                                  <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
-                                    class="minus"></button>
-                                  <input class="quantity fw-bold text-black" min="0" name="quantity" value="1"
-                                    type="number">
-                                  <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
-                                    class="plus"></button>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-          
-                          <div class="d-flex align-items-center mb-5">
-                            <div class="flex-shrink-0">
-                              <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/6.webp"
-                                class="img-fluid" style="width: 150px;" alt="Generic placeholder image">
-                            </div>
-                            <div class="flex-grow-1 ms-3">
-                              <a href="#!" class="float-end text-black"><i class="fas fa-times"></i></a>
-                              <h5 class="text-primary">Headphones Bose 35 II</h5>
-                              <h6 style="color: #9e9e9e;">Color: Red</h6>
-                              <div class="d-flex align-items-center">
-                                <p class="fw-bold mb-0 me-5 pe-3">239$</p>
-                                <div class="def-number-input number-input safari_only">
-                                  <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
-                                    class="minus"></button>
-                                  <input class="quantity fw-bold text-black" min="0" name="quantity" value="1"
-                                    type="number">
-                                  <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
-                                    class="plus"></button>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-          
-                          <div class="d-flex align-items-center mb-5">
-                            <div class="flex-shrink-0">
-                              <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/1.webp"
-                                class="img-fluid" style="width: 150px;" alt="Generic placeholder image">
-                            </div>
-                            <div class="flex-grow-1 ms-3">
-                              <a href="#!" class="float-end text-black"><i class="fas fa-times"></i></a>
-                              <h5 class="text-primary">iPad 9.7 6-gen WiFi 32GB</h5>
-                              <h6 style="color: #9e9e9e;">Color: rose pink</h6>
-                              <div class="d-flex align-items-center">
-                                <p class="fw-bold mb-0 me-5 pe-3">659$</p>
-                                <div class="def-number-input number-input safari_only">
-                                  <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
-                                    class="minus"></button>
-                                  <input class="quantity fw-bold text-black" min="0" name="quantity" value="2"
-                                    type="number">
-                                  <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
-                                    class="plus"></button>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-          
-                          <hr class="mb-4" style="height: 2px; background-color: #1266f1; opacity: 1;">
-                          
-                          <div class="d-flex justify-content-between px-x">
-                            <p class="fw-bold">Discount:</p>
-                            <p class="fw-bold">95$</p>
-                          </div>
-                          <div class="d-flex justify-content-between p-2 mb-2" style="background-color: #e1f5fe;">
-                            <h5 class="fw-bold mb-0">Total:</h5>
-                            <h5 class="fw-bold mb-0">2261$</h5>
-                          </div>
-          
                         </div>
-                        <div class="col-lg-6 px-5 py-4">
-          
-                          <h3 class="mb-5 pt-2 text-center fw-bold text-uppercase">Payment</h3>
-                            
-                          <form class="mb-5">
-          
-                            <div class="form-outline mb-5">
-                              <input type="text" id="typeText" class="form-control form-control-lg" siez="17"
-                                value="1234 5678 9012 3457" minlength="19" maxlength="19" />
-                              <label class="form-label" for="typeText">Card Number</label>
-                            </div>
-          
-                            <div class="form-outline mb-5">
-                              <input type="text" id="typeName" class="form-control form-control-lg" siez="17"
-                                value="John Smith" />
-                              <label class="form-label" for="typeName">Name on card</label>
-                            </div>
-          
-                            <div class="row">
-                              <div class="col-md-6 mb-5">
-                                <div class="form-outline">
-                                  <input type="text" id="typeExp" class="form-control form-control-lg" value="01/22"
-                                    size="7" id="exp" minlength="7" maxlength="7" />
-                                  <label class="form-label" for="typeExp">Expiration</label>
-                                </div>
-                              </div>
-                              <div class="col-md-6 mb-5">
-                                <div class="form-outline">
-                                  <input type="password" id="typeText" class="form-control form-control-lg"
-                                    value="&#9679;&#9679;&#9679;" size="1" minlength="3" maxlength="3" />
-                                  <label class="form-label" for="typeText">Cvv</label>
-                                </div>
-                              </div>
-                            </div>
-          
-                            <p class="mb-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit <a
-                                href="#!">obcaecati sapiente</a>.</p>
-          
-                            <button type="button" class="btn btn-primary btn-block btn-lg">Buy now</button>
-          
-                            <h5 class="fw-bold mb-5" style="position: absolute; bottom: 0;">
-                              <a href="#!"><i class="fas fa-angle-left me-2"></i>Back to shopping</a>
-                            </h5>
-          
-                          </form>
-          
-                        </div>
-                      </div>
-                      
                     </div>
-                  </div>
                 </div>
-              </div>
+                <div class="col shop-item">
+                    <div class="card h-100 text-center">
+                        <img class="shop-item-image card-img-top" style="height: 200px;" src="img/minecraft.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title shop-item-title">Minecraft</h5>
+                            <div class="shop-item-details d-flex justify-content-around align-items-center">
+                                <span class="shop-item-price">$14.99</span>
+                                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col shop-item">
+                    <div class="card h-100 text-center">
+                        <img class="shop-item-image card-img-top" style="height: 200px;"
+                            src="img/Palpatines arrest.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title shop-item-title">Palpatine's Arrest</h5>
+                            <div class="shop-item-details d-flex justify-content-around align-items-center">
+                                <span class="shop-item-price">$9.99</span>
+                                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col shop-item">
+                    <div class="card h-100 text-center">
+                        <img class="shop-item-image card-img-top" style="height: 200px;" src="img/Batman.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title shop-item-title">Batman</h5>
+                            <div class="shop-item-details d-flex justify-content-around align-items-center">
+                                <span class="shop-item-price">$7.99</span>
+                                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col shop-item">
+                    <div class="card h-100 text-center">
+                        <img class="shop-item-image card-img-top" style="height: 200px;" src="img/Shirt.png">
+                        <div class="card-body">
+                            <h5 class="card-title shop-item-title">T-Shirt</h5>
+                            <div class="shop-item-details d-flex justify-content-around align-items-center">
+                                <span class="shop-item-price">$19.99</span>
+                                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col shop-item">
+                    <div class="card h-100 text-center">
+                        <img class="shop-item-image card-img-top" style="height: 200px;" src="img/Cofee.png">
+                        <div class="card-body">
+                            <h5 class="card-title shop-item-title">Coffee Cup</h5>
+                            <div class="shop-item-details d-flex justify-content-around align-items-center">
+                                <span class="shop-item-price">$6.99</span>
+                                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          
+        </section>
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg container content-section bg-white">
+                <div class="container py-5 modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Cart</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="d-flex flex-row">
+                        <div class="cart-items">
+                        </div>
+                        <div class="col-lg-6 px-5 py-6">
+                            <h3 class="mb-5 pt-2 text-center fw-bold text-uppercase">Payment</h3>
+                            <div class="cart-total">
+                                <strong class="cart-total-title">Total</strong>
+                                <span class="cart-total-price">$0</span>
+                            </div>
+                            <form class="mb-5">
+                                <div class="form-outline mb-5">
+                                    <input type="text" id="typeText" class="form-control form-control-lg" siez="17"
+                                        value="1234 5678 9012 3457" minlength="19" maxlength="19" />
+                                    <label class="form-label" for="typeText">Card Number</label>
+                                </div>
+                                <div class="form-outline mb-5">
+                                    <input type="text" id="typeName" class="form-control form-control-lg" siez="17"
+                                        value="John Smith" />
+                                    <label class="form-label" for="typeName">Name on card</label>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-6 mb-5">
+                                        <div class="form-outline">
+                                            <input type="text" id="typeExp" class="form-control form-control-lg"
+                                                value="01/22" size="7" id="exp" minlength="7" maxlength="7" />
+                                            <label class="form-label" for="typeExp">Expiration</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-5">
+                                        <div class="form-outline">
+                                            <input type="password" id="typeText" class="form-control form-control-lg"
+                                                value="&#9679;&#9679;&#9679;" size="1" minlength="3" maxlength="3" />
+                                            <label class="form-label" for="typeText">Cvv</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Back to
+                            Shoping</button>
+                        <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
-    
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+    <footer class="footer mt-5 py-3 bg-secondary">
+        <div class="container ">
+            <ul class="nav footer-nav d-flex justify-content-around align-items-center">
+                <li>
+                    <a href="https://www.youtube.com" target="_blank">
+                        <img src="img/YouTube Logo.png" style="height: 30px;">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.spotify.com" target="_blank">
+                        <img src="img/Spotify Logo.png" style="height: 30px;">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com" target="_blank">
+                        <img src="img/Facebook Logo.png" style="height: 30px;">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
 </html>
